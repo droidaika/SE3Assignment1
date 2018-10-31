@@ -10,5 +10,5 @@ branches:
     - master
 
 build:
-	ci: 
-	- mvn clean install
+ci: 
+- mvn clean install
