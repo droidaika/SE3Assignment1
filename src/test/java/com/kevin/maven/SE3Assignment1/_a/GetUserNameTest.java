@@ -3,7 +3,7 @@ package com.kevin.maven.SE3Assignment1._a;
 import org.joda.time.DateTime;
 import org.joda.time.Years;
 
-import junit.framework.Test;
+
 import junit.framework.TestCase;
 
 public class GetUserNameTest extends TestCase {
@@ -16,13 +16,11 @@ public class GetUserNameTest extends TestCase {
 	public void testGetUsername() {
 		
 		Student testStudent = new Student(Name, ID,DOB);
-		
-		// Test
 		String testUsername = testStudent.getUsername();
+		
 		Years tempAge = Years.yearsBetween(DOB.toLocalDate(), DateTime.now().toLocalDate());
 		int IntAgeTemp = tempAge.getYears();
 		
-		// Verify
 		assertEquals(Name+IntAgeTemp , testUsername);
 	}
 

@@ -42,16 +42,16 @@ public class Student {
 		return CourseList;
 	}
 
-	public void setCourseList(ArrayList<Course> courseList) {
-		CourseList = courseList;
+	public void addCourseToList(Course course) {
+		CourseList.add(course);
 	}
 
 	public ArrayList<Module> getModuleList() {
 		return ModuleList;
 	}
 
-	public void setModuleList(ArrayList<Module> moduleList) {
-		ModuleList = moduleList;
+	public void addModuleToList(Module module) {
+		ModuleList.add(module);
 	}
 
 	

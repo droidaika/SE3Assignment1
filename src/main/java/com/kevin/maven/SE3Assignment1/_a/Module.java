@@ -12,14 +12,14 @@ public class Module {
 	public ArrayList<Student> getStudentsList() {
 		return StudentsList;
 	}
-	public void setStudentsList(ArrayList<Student> studentsList) {
-		StudentsList = studentsList;
+	public void addStudentToList(Student student) {
+		StudentsList.add(student);
 	}
 	public ArrayList<Course> getCourseList() {
 		return CourseList;
 	}
-	public void setCourseList(ArrayList<Course> courseList) {
-		CourseList = courseList;
+	public void addCourseToList(Course course) {
+		CourseList.add(course);
 	}
 	private ArrayList<Course> CourseList=new ArrayList<Course>();
 	public Module(String moduleName, String iD) {

@@ -31,14 +31,14 @@ public class Course {
 	public ArrayList<Student> getStudentsList() {
 		return StudentsList;
 	}
-	public void setStudentsList(ArrayList<Student> studentsList) {
-		StudentsList = studentsList;
+	public void addStudentToList(Student student) {
+		StudentsList.add(student);
 	}
 	public ArrayList<Module> getModuleList() {
 		return ModuleList;
 	}
-	public void setModuleList(ArrayList<Module> moduleList) {
-		ModuleList = moduleList;
+	public void addModuleToList(Module module) {
+		ModuleList.add(module);
 	}
 	public DateTime getStartDate() {
 		return StartDate;
