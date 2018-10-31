@@ -8,6 +8,12 @@ import java.util.ArrayList;
 public class Module {
 
 	private String ModuleName, ID;
+	public String getName() {
+		return ModuleName;
+	}
+	public void setModuleName(String moduleName) {
+		ModuleName = moduleName;
+	}
 	private ArrayList<Student> StudentsList=new ArrayList<Student>();
 	public ArrayList<Student> getStudentsList() {
 		return StudentsList;
