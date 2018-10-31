@@ -9,6 +9,3 @@ branches:
   only:
     - master
 
-build:
-ci: 
-- mvn clean install
